@@ -1,14 +1,11 @@
 pragma solidity ^0.4.18;
 
-import 'zeppelin-solidity/contracts/math/SafeMath.sol';
-
 /**
  * Shipment Tracking
  *
  * @title An example shipment tracking smart contract.
  */
 contract ShipmentTracking {
-    using SafeMath for uint;
 
     struct Location {
         string name;
@@ -50,12 +47,12 @@ contract ShipmentTracking {
     /**
      * Constructs a contract that updates and tracks location history of a
      *     package throughout shipment.
-     * @param _packageId xxxx
-     * @param _from xxxx
-     * @param _to xxxx
-     * @param _originName xxxx
-     * @param _destinationName xxxx
-     * @param _custodian xxxx
+     * @param _packageId Unique id for the package.
+     * @param _from String of from entity name.
+     * @param _to String of to entity name.
+     * @param _originName String of origin place name.
+     * @param _destinationName String of destination place name.
+     * @param _custodian String of package caretaker's name.
      */
     function ShipmentTracking(
         uint _packageId,
