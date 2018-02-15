@@ -48,12 +48,12 @@ contract('ShipmentTracking', function(accounts) {
             details.args[prop] = details.args[prop].toString();
           }
 
-          // console.log(prop, details.args[prop]);
+          console.log(prop, details.args[prop]);
         }
       }
     });
 
-    await wait(30000);
+    // await wait(30000);
 
   });
 
